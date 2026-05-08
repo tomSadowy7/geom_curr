@@ -9,11 +9,11 @@ running a curriculum on geometric object parameter variation helps with sample e
 - `for_procura/` - file to copy/paste into ProCura (explained in Installation & Setup)
 
 ### Installation & Setup
-To start, first git clone this repository while also recursely cloning the submodules with `git clone --recurse-submodules git@github.com:tomSadowy7/geom_curr.git`. We need `ProCura`, which is a scene reconstruction layer on top of Infinigen that Tomasz created while an undergraduate researcher at the Princeton Vision & Learning Lab, to perturb object parameters and `mujoco_menagerie` for the Franka arm asset. Then, perform `mv gen_objects/* ProCura/` as the `gen_object` scripts need to be in the ProCura top-level directory and also replace `ProCura/files_to_replace/cup.py` with `for_ProCura/cup.py` (this allows for params.json to be saved). Afterwards, please follow Infinigen's instructions on how to install the Infinigen environment. We'll also need to `pip -m install` a few libraries to the Infinigen environment which you can find below. 
+To start, first git clone this repository while also recursely cloning the submodules with `git clone --recurse-submodules git@github.com:tomSadowy7/geom_curr.git`. We need `ProCura`, which is a scene reconstruction layer on top of Infinigen that Tomasz created while an undergraduate researcher at the Princeton Vision & Learning Lab, to perturb object parameters and `mujoco_menagerie` for the Franka arm asset. Then, perform `mv gen_objects/* ProCura/` as the `gen_object` scripts need to be in the ProCura top-level directory and also replace `ProCura/files_to_replace/cup.py` with `for_ProCura/cup.py` (this allows for params.json to be saved). Afterwards, please follow Infinigen's instructions (Infinigen is nested inside of ProCura) on how to install the Infinigen environment. We'll also need to `pip -m install` a few libraries to the Infinigen environment which you can find below. 
 
 Libraries to pip install to the Infinigen environment:
 - pybullet
-- stablebaselines3
+- stable-baselines3
 - gymnasium
 - mujoco
 
