@@ -1,0 +1,6 @@
+[submodule "ProCura"]
+	path = ProCura
+	url = git@github.com:tomSadowy7/ProCura.git
+[submodule "mujoco_menagerie"]
+	path = mujoco_menagerie
+	url = https://github.com/google-deepmind/mujoco_menagerie
