@@ -6,7 +6,7 @@ import gymnasium as gym
 import numpy as np
 from stable_baselines3.common.callbacks import BaseCallback
 
-from train_mujoco import MujocoMugLiftEnv, build_scene
+from train.train_mujoco import MujocoMugLiftEnv, build_scene
 
 #UTILS for run_adaptive_curriculum, run_curriculum_experiments, run_ood_experiments
 #ALL Scripts of all classes must be run from top scope project dir

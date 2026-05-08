@@ -9,7 +9,7 @@ from stable_baselines3 import PPO
 from stable_baselines3.common.monitor import Monitor
 from stable_baselines3.common.vec_env import SubprocVecEnv
 
-from utils import (DIFFICULTIES, AssetSpec, CheckpointEvalCallback,
+from run_experiments.utils import (DIFFICULTIES, AssetSpec, CheckpointEvalCallback,
     JsonTrainLogger, MultiAssetEnvBase, append_jsonl, atomic_write_json,
     load_assets, random_seeds, save_runs_csv)
 
